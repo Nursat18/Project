@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+      @apply bg-[#393642] text-white  font-mono text-lg px-5 py-3 w-[370px] h-[54px] rounded-lg border-none cursor-pointer transition-transform transform;
+    }
+  
+    .btn:hover {
+      @apply bg-[#504d5a] scale-110;
+    }
+  
+    .btn:active {
+      @apply scale-95;
+    }
+
+    .bg-light {
+        @apply grid grid-cols-[1fr] gap-4 bg-[#fcf9f9];
+      }
+    
+
+    
+      .course {
+        @apply ml-[120px] mr-[120px] pb-[80px];
+      }
+
+    
+      .course h1 {
+        @apply text-[46px] leading-[55.2px] font-bold text-[#353537] pt-[70px] relative;
+      }
+
+      .course h1::before {
+        content: url('img/Знакбольше.png');
+        @apply absolute top-9 -left-24 hidden lg:block;
+      }
+
+      .course p {
+        @apply text-black text-[20px] leading-[36px] mt-[20px];
+      }
+    
+      .course h3 {
+        @apply text-[#353537] text-[30px] leading-[39.36px] mt-[70px] font-semibold;
+      }
+    
+      .course ul {
+        @apply list-none py-[35px] relative;
+      }
+
+      .course ul::after {
+        content: url('img/Слешзнакменьше.png');
+        @apply absolute bottom-[44px] right-[45px] hidden lg:block;
+      }
+    
+      .course li {
+        @apply py-[10px] pl-[3px] text-[#393642];
+      }
+    
+      .course li::before {
+        content: '✓';
+        @apply pr-[9px];
+      }
+    
+    
+
+
+}
+
+  
+
